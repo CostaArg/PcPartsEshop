@@ -8,12 +8,14 @@ $succeed = mysqli_query($conn,"INSERT INTO REGISTRATION (USERNAME, PASSWORD, EMA
 
   if ($succeed)
   {
-    $answer = "The record was added";
+    echo "You are now registered";
+    header("Refresh: 3; index.php");
   }
   else
   {
-    $answer = "Error, record couldn't be added";
+    echo "Error - Registration failed";
+    header("Refresh: 3; index.php");
   }
-echo $answer;
+
 $conn->close();
 ?>

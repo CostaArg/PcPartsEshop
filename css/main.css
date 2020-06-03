@@ -9,9 +9,9 @@ header {
 }
 
 .button {
-	background-color: #808000;
+	background-color: #434639;
 	border-radius: 28px;
-	border: 1px solid #808000;
+	border: 1px solid #434639;
 	cursor: pointer;
 	color: #ffffff;
 	font-family: "Roboto", sans-serif;
@@ -23,9 +23,9 @@ header {
 }
 
 .homeButton {
-	background-color: #808000;
+	background-color: #434639;
 	border-radius: 28px;
-	border: 1px solid #808000;
+	border: 1px solid #434639;
 	cursor: pointer;
 	color: #ffffff;
 	font-family: "Roboto", sans-serif;
@@ -34,4 +34,15 @@ header {
 	text-decoration: none;
 	text-shadow: 0px 1px 0px #2f6627;
   display: inline-block;
+}
+
+body {
+  background: #76b852; /* fallback for old browsers */
+  background: -webkit-linear-gradient(right, #808000, #999900);
+  background: -moz-linear-gradient(right, #808000, #999900);
+  background: -o-linear-gradient(right, #808000, #999900);
+  background: linear-gradient(to left, #808000, #999900);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
