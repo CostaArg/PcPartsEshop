@@ -96,7 +96,7 @@
 				<div class="product-image"><img src="<?php echo $product_array[$key]["image"]; ?>" width="200" height="200"></div>
 				<div class="label"><strong><?php echo $product_array[$key]["title"]; ?></strong></div>
 				<div class="label"><?php echo "$".$product_array[$key]["price"]; ?></div>
-				<div class="label"><a class="addtocartbutton" href="?action=add&code=<?php echo $product_array[$key]["id"]; ?>">add to cart</a></div>
+				<div class="label" style="padding-top:15px; padding-bottom:20px;"><a class="addtocartbutton" href="?action=add&code=<?php echo $product_array[$key]["id"]; ?>">add to cart</a></div>
 		</div>
           	<?php
           			}
