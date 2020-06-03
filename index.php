@@ -88,7 +88,7 @@
 
 	<div id="flexcontainer">
     <?php
-    $product_array = $db_handle->runQuery("SELECT `id`, `title`, `price`, `image`, `writer_id` FROM `products`  ORDER BY id ASC");
+    $product_array = $db_handle->runQuery("SELECT `id`, `title`, `price`, `image`, `productcategory_id` FROM `products`  ORDER BY id ASC");
     if (!empty($product_array)) {
     foreach($product_array as $key=>$value){
     ?>

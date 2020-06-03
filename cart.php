@@ -22,7 +22,7 @@
   <?php
    require_once("controller.php");
           $db_handle = new controller();
-    $product_array = $db_handle->runQuery("SELECT `id`, `title`, `price`, `image`, `writer_id` FROM `products`  ORDER BY id ASC");
+    $product_array = $db_handle->runQuery("SELECT `id`, `title`, `price`, `image`, `productcategory_id` FROM `products`  ORDER BY id ASC");
     if (!empty($product_array) && !empty($_SESSION["cart_item"])) {
     foreach($_SESSION["cart_item"] as $key=>$value){
 		foreach($product_array as $product){
@@ -39,7 +39,7 @@
 		}
 		}
           			}
-          	
+
           	?>
 </div>
 
