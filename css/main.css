@@ -12,7 +12,7 @@ header {
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: #808000;
+  background: #434639;
   width: 100%;
   max-width: 360px;
   border: 0;
@@ -22,9 +22,32 @@ header {
   -webkit-transition: all 0.3 ease;
   transition: all 0.3 ease;
   cursor: pointer;
+  text-decoration: none;
 }
+
 .cashoutbutton:hover,.cashoutbutton:active,.cashoutbutton:focus {
-  background: #999900;
+  background: #5e6250;
+}
+
+.addtocartbutton {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #434639;
+  width: 100%;
+  max-width: 360px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.addtocartbutton:hover,.addtocartbutton:active,.addtocartbutton:focus {
+  background: #5e6250;
 }
 
 .button {
@@ -64,4 +87,15 @@ body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#flexcontainer{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+#flexcontainer .item{
+	margin-left: 10px;
 }

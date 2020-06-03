@@ -25,13 +25,14 @@ class controller {
 
 	function runQuery($query) {
 		$conn = new mysqli($this->host,$this->user,$this->password, $this->database);
-		 $result = $conn->query($query);
-
+		$result = $conn->query($query);
+		if ($result != false){
 			while($row=$result->fetch_assoc()) {
-			$resultset[] = $row;
+				$resultset[] = $row;
+			}
+			if(!empty($resultset))
+				return $resultset;
 		}
-		if(!empty($resultset))
-			return $resultset;
 	}
 
 	function numRows($query) {
