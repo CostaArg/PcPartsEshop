@@ -7,23 +7,24 @@
   <body>
     <header>
 
-<div id="homeContainer">
   <a class="homeButton" href="/eshop/index.php">Home Page</a>
-</div>
 
-<div id="container">
+<div class="wrapper">
   <a class="button" href="/eshop/loginform.php">Login</a>
   <a class="button" href="/eshop/registerform.php">Register</a>
   <a class="button" href="/eshop/logout.php">Logout</a>
   <a class="button" href="/eshop/cart.php">Cart</a>
 </div>
 
-
-  <h2> Welcome to our E-shop </h2>
-  <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
-
-
     </header>
+
+    <?php
+    include('login.php'); // Includes Login Script
+
+    if(isset($_SESSION['login_user'])){
+   echo "Welcome, " . $_SESSION['username'] . "!";
+    }
+    ?>
 
     <div>
       <ul> This </ul>

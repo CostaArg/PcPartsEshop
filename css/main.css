@@ -1,11 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
-#container {
-    text-align: right;
+.wrapper {
+  float: right;
 }
 
-#homeContainer {
-    text-align: left;
+header {
+	height: 100px;
 }
 
 .button {

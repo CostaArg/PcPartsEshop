@@ -1,11 +1,10 @@
 <?php
 require_once("connect.php");
+$username = $_POST['username'];
+$password = $_POST['password'];
+$email = $_POST['email'];
 
-$name = $_POST['cust_na'];
-$password = $_POST['cust_pa'];
-$email = $_POST['cust_em'];
-
-$succeed = mysqli_query($conn,"INSERT INTO REGISTRATION (NAME, PASS, EMAIL) VALUES ('$name', SHA1('$pass'), '$email')");
+$succeed = mysqli_query($conn,"INSERT INTO REGISTRATION (USERNAME, PASSWORD, EMAIL) VALUES ('$username', SHA1('$password'), '$email')");
 
   if ($succeed)
   {
@@ -15,6 +14,5 @@ $succeed = mysqli_query($conn,"INSERT INTO REGISTRATION (NAME, PASS, EMAIL) VALU
   {
     $answer = "Error, record couldn't be added";
   }
-
 $conn->close();
 ?>

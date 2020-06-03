@@ -20,7 +20,7 @@ header("location: index.php");
 
     <div class="login-page">
       <div class="form">
-        <form class="login-form">
+        <form class="login-form" action="login.php" method="POST">
           <input type="text" placeholder="username"/>
           <input type="password" placeholder="password"/>
           <button>login</button>
