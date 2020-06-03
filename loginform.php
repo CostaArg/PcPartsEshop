@@ -1,8 +1,8 @@
 <?php
-include('login.php'); // Includes Login Script
-
-if(isset($_SESSION['login_user'])){
-header("location: index.php");
+session_start();
+var_dump($_SESSION['username']);
+if(isset($_SESSION['username'])){
+	header("location: index.php");
 }
 ?>
 
@@ -21,8 +21,8 @@ header("location: index.php");
     <div class="login-page">
       <div class="form">
         <form class="login-form" action="login.php" method="POST">
-          <input type="text" placeholder="username"/>
-          <input type="password" placeholder="password"/>
+          <input type="text" name="username" placeholder="username"/>
+          <input type="password" name="password" placeholder="password"/>
           <button>login</button>
           <p class="message">Not registered? <a href="/eshop/registerform.php">Create an account</a></p>
         </form>
@@ -31,6 +31,3 @@ header("location: index.php");
 
   </body>
 </html>
-
-
-<span><?php echo $error; ?></span>

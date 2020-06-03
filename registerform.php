@@ -16,7 +16,7 @@
           <input type="text" name="username" placeholder="username"/>
           <input type="password" name="password" placeholder="password"/>
           <input type="text" name="email" placeholder="email address"/>
-          <button>create</button>
+          <button>register</button>
           <p class="message">Already registered? <a href="/eshop/loginform.php">Sign In</a></p>
         </form>
       </div>

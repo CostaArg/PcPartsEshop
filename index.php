@@ -20,8 +20,7 @@
 
     <?php
     include('login.php'); // Includes Login Script
-
-    if(isset($_SESSION['login_user'])){
+    if(isset($_SESSION['username'])){
    echo "Welcome, " . $_SESSION['username'] . "!";
     }
     ?>

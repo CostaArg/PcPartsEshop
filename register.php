@@ -14,5 +14,6 @@ $succeed = mysqli_query($conn,"INSERT INTO REGISTRATION (USERNAME, PASSWORD, EMA
   {
     $answer = "Error, record couldn't be added";
   }
+echo $answer;
 $conn->close();
 ?>

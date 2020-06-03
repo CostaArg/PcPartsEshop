@@ -6,6 +6,8 @@
   </head>
   <body>
 
+  <a class="homeButton" href="/eshop/index.php">Home Page</a>
+  
 <div>
   <ul>That</ul>
   <ul>That</ul>
