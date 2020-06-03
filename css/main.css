@@ -8,6 +8,25 @@ header {
 	height: 100px;
 }
 
+.cashoutbutton {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #808000;
+  width: 100%;
+  max-width: 360px;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.cashoutbutton:hover,.cashoutbutton:active,.cashoutbutton:focus {
+  background: #999900;
+}
+
 .button {
 	background-color: #434639;
 	border-radius: 28px;

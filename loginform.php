@@ -10,6 +10,7 @@ if(isset($_SESSION['username'])){
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/form.css">
+		    <title>Login</title>
   </head>
   <body>
 
