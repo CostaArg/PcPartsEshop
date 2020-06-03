@@ -8,17 +8,19 @@
     <header>
 
 <div id="homeContainer">
-  <a class="homeButton" href="/eshop/index.html">Home Page</a>
+  <a class="homeButton" href="/eshop/index.php">Home Page</a>
 </div>
 
 <div id="container">
-  <a class="button" href="/eshop/login.html">Login</a>
-  <a class="button" href="/eshop/register.html">Register</a>
-  <a class="button" href="/eshop/logout.html">Logout</a>
-  <a class="button" href="/eshop/cart.html">Cart</a>
+  <a class="button" href="/eshop/loginform.php">Login</a>
+  <a class="button" href="/eshop/registerform.php">Register</a>
+  <a class="button" href="/eshop/logout.php">Logout</a>
+  <a class="button" href="/eshop/cart.php">Cart</a>
 </div>
 
+
   <h2> Welcome to our E-shop </h2>
+  <b id="welcome">Welcome : <i><?php echo $login_session; ?></i></b>
 
 
     </header>

@@ -1,3 +1,11 @@
+<?php
+include('login.php'); // Includes Login Script
+
+if(isset($_SESSION['login_user'])){
+header("location: index.php");
+}
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -7,7 +15,7 @@
   <body>
 
     <div id="homeContainer">
-      <a class="homeButton" href="/eshop/index.html">Home Page</a>
+      <a class="homeButton" href="/eshop/index.php">Home Page</a>
     </div>
 
     <div class="login-page">
@@ -16,10 +24,13 @@
           <input type="text" placeholder="username"/>
           <input type="password" placeholder="password"/>
           <button>login</button>
-          <p class="message">Not registered? <a href="/eshop/register.html">Create an account</a></p>
+          <p class="message">Not registered? <a href="/eshop/registerform.php">Create an account</a></p>
         </form>
       </div>
     </div>
 
   </body>
 </html>
+
+
+<span><?php echo $error; ?></span>
